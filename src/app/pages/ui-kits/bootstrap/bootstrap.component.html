@@ -1,0 +1,44 @@
+<div>
+  <div class="air__utils__heading">
+    <h5>
+      <span class="mr-3">Bootstrap Components</span>
+      <a
+        href="https://ng-bootstrap.github.io/#/getting-started"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="btn btn-sm btn-light"
+      >
+        Official Documentation
+        <i class="fe fe-corner-right-up"></i>
+      </a>
+    </h5>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6" *ngFor="let item of kit">
+          <div class="mb-3">
+            <h5 class="text-black mb-2">
+              <strong>{{item.name}}</strong>
+            </h5>
+            <div>
+              <p class="mb-2">
+                {{item.description}}
+              </p>
+              <a
+                [href]="item.link"
+                target="_blank"
+                class="air__utils__link air__utils__link__underlined"
+              >
+                Examples
+                <small>
+                  <i class="icmn-link ml-1"></i>
+                </small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
